@@ -9,9 +9,9 @@ stata-mp -e code/install-packages.do
 
 stata-mp -e code/intermediate/create-data.do #creates main data for analysis
 python code/intermediate/brands.py #generates data for analysis with brands
-stata-mp -e code/intermediate/good-char #stores locals for regressions
-stata-mp -e code/intermediate/lasso-select #runs lasso regression to select controls
-stata-mp -e code/intermediate/previous-consip-purchase #generates data for previous Consip purchase
+stata-mp -e code/intermediate/good-char.do #stores locals for regressions
+stata-mp -e code/intermediate/lasso-select.do #runs lasso regression to select controls
+stata-mp -e code/intermediate/previous-consip-purchase.do #generates data for previous Consip purchase
 stata-mp -e code/intermediate/scatterplots-event-studies.do #helps plotting the scatterplot
 
 #Tables
@@ -36,14 +36,12 @@ stata-mp -e code/tables/did-complex-simple.do #Appendix Table F2
 python code/tables/clean-tables.py #clean tables about previous Consip experience
 
 #Figures
-
 stata-mp -e code/figures/goods_deals.do #Figure 1
 stata-mp -e code/figures/event_studies.do #Figure 2
 stata-mp -e code/figures/competence.do #Figure 3
 stata-mp -e code/figures/previous-consip-coefficient-estimates.do #Figure 4
 
 ##Figures Appendix
-
 stata-mp -e code/figures/appendix_figure_residualized_prices.do #Figure A1
 stata-mp -e code/figures/descriptives_cutoffs.do #Figures B1 & B2
 stata-mp -e code/figures/robustness-drop-one.do #Figures D1
