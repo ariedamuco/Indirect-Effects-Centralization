@@ -47,7 +47,7 @@ The provided code reproduces:
 
 | Figure/Table #    | Program                  |
 |-------------------|--------------------------|
-| Table 1           | sum_stat.do    |
+| Table 1           | sum_stats.do    |
 | Table 2           | main-specification.do|
 | Table 3           | heterogeneities-active.do|
 | Table 4          | previous-consip-experience.do         |

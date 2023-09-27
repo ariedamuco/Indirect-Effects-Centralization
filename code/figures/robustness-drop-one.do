@@ -3,7 +3,6 @@ set scheme plotplain
 
 use "data/consip.dta", clear
 include "code/intermediate/good-char.do"
-egen month_year =group(month year)
 
 xtset id 
 

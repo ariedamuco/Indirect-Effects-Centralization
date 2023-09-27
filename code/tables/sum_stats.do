@@ -3,10 +3,9 @@ use "data/consip.dta", clear
 
 include "code/intermediate/good-char.do"
 
-
+preserve
 ** TAble 1 Panel A: Sample characteristics, by PB type
 
-preserve
 * Expenditure
 gen exp = price*quantity
 egen totalspend = total(exp), by(PA_govtype year)
@@ -22,6 +21,7 @@ bys PA_govtype: gen N_jout = (post_consip==1 & consip==0)
 bys PA_govtype: gen N_joutact = (activeD==1 & consip==0)
 
 	
+
 collapse (sum) N_* post_consip activeD (mean) totalspend, by(PA_govtype) fast
 
 replace post_consip = post_consip/N_jit
@@ -41,6 +41,7 @@ collab(`"N. of total observations"' `"N. of PBs"' `"N. of different goods purcha
 
 
 restore
+
 
 
 ** Table 1 Panel B: Sample characteristics, by good type
@@ -67,6 +68,8 @@ replace N_joutact = N_joutact/N_jit
 
 order good N_jit N_i post_consip N_jout activeD N_joutact mu_p cv_jt
 
+
+
 estpost tabstat N_jit N_i mu_p cv_jt post_consip N_jout activeD N_joutact , by(good) 
 esttab using  "output/tables/Table1_panelB.tex", noobs nomtitle ///
 cells("N_jit N_i mu_p(fmt(2)) cv_jt(fmt(2)) post_consip(fmt(2)) N_jout(fmt(2)) activeD(fmt(2)) N_joutact(fmt(2)) ") ///
@@ -74,5 +77,5 @@ nonumber varwidth(30) ///
 collab(`"N. of total purchases"' `"N. of different PBs"' `"Average price"' `"Coefficient of variation (price)"' `"Post-Consip purchases"' `"Out-of-Consip purchases"' `"Purchases while deal active"' `"Out-of-Consip while deal active"' , lhs("`:var lab good'")) tex replace
 	
 
-restore
+
 
