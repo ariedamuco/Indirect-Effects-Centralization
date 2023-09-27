@@ -1,8 +1,6 @@
 
 clear all
-*use  "data/previous_consip.dta", clear
-do "code/intermediate/previous-consip-purchase-random.do"
-
+use  "data/previous_consip.dta", clear
 include "code/intermediate/good-char.do"
 
 local version1 "if consip==0, absorb(id goodid month_year)  cluster(id)"

@@ -1,5 +1,5 @@
 set scheme plotplain
-do "code/intermediate/previous-consip-purchase-random.do"
+use  "data/previous_consip.dta", clear
 
 include "code/intermediate/good-char.do"
 
