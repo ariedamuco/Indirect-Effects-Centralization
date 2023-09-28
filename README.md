@@ -32,7 +32,7 @@ Data files needed to generate all the replication is included in the data folder
 
 
 | Data file | Source | Provided |
-|-----------|--------|----------|---------|
+|-----------|--------|---------|
 | `consip_data_AER.dta` | BPV |  Yes |
 | `consip.dta.dta` | Own/Derived | Yes |
 | `previous_consip.dta` | Own/Derived | Yes |
