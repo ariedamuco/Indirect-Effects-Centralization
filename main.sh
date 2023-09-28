@@ -1,6 +1,7 @@
 #! /bin/bash
-
-
+python -m venv indirect-effects
+source indirect-effects/bin/activate
+pip install pandas
 #Please run first intermediate files, then tables and finally figures. While the order below is not strictly necessary, some figures are generated from table outputs
 
 #Intermediate files
@@ -48,4 +49,6 @@ stata-mp -e code/figures/robustness-drop-one.do #Figures D1
 stata-mp -e code/figures/cofficient-estimates-DH.do #Figure D2
 stata-mp -e code/figures/appendix-event-study.do #Figure F1
 
+
+deactivate
 
