@@ -1,0 +1,21 @@
+old|new
+cartiera modo|cartiera mondi
+centrufficio loreto|centrufficio loreto spa
+colmas|colmas dimension
+della chiara|della chiara snc
+ergo|ergo plus
+fujitsu - siemens|fujitsu
+gb|gb srl
+hp compaq|hp
+ibm acs|ibm
+ibm compatibile|ibm
+ibm-polyedra|ibm
+iss 185+isd4080|iss
+isss165+isd4060|iss
+junior antoni's office|junior anthony's office
+lt form2|lt form
+malerba|manerba spa
+manerba|manerba spa
+mr|mrv
+r 170eo|r160eo
+soporcel|soporcell

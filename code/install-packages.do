@@ -9,7 +9,7 @@ sysdir set SITE `pwd'/ado/site
 
 program main
     * *** Add required packages from SSC to this list ***
-    local ssc_packages "estout reghdfe pdslasso did_multiplegt blindschemes lassopack scheme-burd outreg outtable"
+    local ssc_packages "estout reghdfe pdslasso did_multiplegt blindschemes lassopack scheme-burd outreg outtable listtab ftools egenmore"
     * *** Add required packages from SSC to this list ***
 
     if !missing("`ssc_packages'") {

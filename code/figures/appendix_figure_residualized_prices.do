@@ -20,6 +20,6 @@ forvalues i=1(1)2{
         xtitle("Residualized prices", size(med))  ///
         ylabel(, labsize(med)) ///
         xlabel(, labsize(med))  
-        graph export output/figures/PriceDensityPrePost`i'.pdf, replace 
+        graph export "output/figures/PriceDensityPrePost`i'.pdf", replace 
     restore
 }

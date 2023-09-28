@@ -41,5 +41,5 @@ include "code/intermediate/leads-lags.do"
 
 twoway (scatter coef leads_lags , mcolor(navy) lcolor(navy)) (line ci_low leads_lags , lpattern(dash)) /*
 */(line ci_high leads_lags , lpattern(dash)), graphregion(color(white)) xline(5) yline(0, lcolor(black))  ylabel(-1(.2)1) xtitle("Quarters to/from event") xlabel(1 "-4" 2 "-3" 3 "-2" 4 "-1" 5 "0" 6 "1" 7 "2" 8 "3" 9 "4") legend(off)
-graph export output/figures/es_end_all.pdf, replace
+graph export "output/figures/es_end_all.pdf", replace
 	

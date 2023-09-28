@@ -1,7 +1,6 @@
 #! /bin/bash
-python -m venv indirect-effects
-source indirect-effects/bin/activate
-pip install pandas
+python -m venv indirect_effects
+. indirect_effects/bin/activate
 #Please run first intermediate files, then tables and finally figures. While the order below is not strictly necessary, some figures are generated from table outputs
 
 #Intermediate files
@@ -9,7 +8,6 @@ pip install pandas
 stata-mp -e code/install-packages.do
 
 stata-mp -e code/intermediate/create-data.do #creates main data for analysis
-python code/intermediate/brands.py #generates data for analysis with brands
 stata-mp -e code/intermediate/good-char.do #stores locals for regressions
 stata-mp -e code/intermediate/lasso-select.do #runs lasso regression to select controls
 stata-mp -e code/intermediate/previous-consip-purchase.do #generates data for previous Consip purchase

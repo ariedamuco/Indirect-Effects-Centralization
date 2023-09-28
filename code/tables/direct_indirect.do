@@ -1,4 +1,14 @@
-use "data/consip_brands.dta", clear
+import delimited "code/intermediate/mapping-brands.txt", delimiter("|") clear varnames(1)
+rename old brand_s // Ensure the 'old' variable is named 'brand_s' for the merge
+tempfile mapping_brands
+save `mapping_brands'
+
+
+use "data/consip.dta", clear
+merge m:1 brand_s using `mapping_brands'
+replace brand_s = new if _merge == 3
+drop new _merge
+
 include "code/intermediate/good-char.do"
 
 drop brand
@@ -8,7 +18,6 @@ recode consip 1=0 0=1, generate (out_consip)
 
 generate post_consip_consip = post_consip*consip
 generate post_consip_out_consip = post_consip*out_consip
-
 
 
 label var post_consip_consip "Post Consip x Consip"

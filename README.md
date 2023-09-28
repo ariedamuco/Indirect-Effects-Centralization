@@ -102,11 +102,6 @@ ssc install did_multiplegt  # Implements De Chaisemartin and d’Haultfoeuille (
 ssc install blindschemes #For plots 
 set scheme burd #For plots 
 
-Python packages
-
-Pandas version 1.3.3
-
-
 References
 
 Bandiera, Oriana, Andrea Prat, and Tommaso Valletti. “Active and Passive Waste in Government Spending: Evidence from a Policy Experiment.” American Economic Review 99, no. 4 (2009a): 1278–1308. https://doi.org/10.1257/aer.99.4.1278.

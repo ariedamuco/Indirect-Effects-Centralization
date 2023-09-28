@@ -21,4 +21,4 @@ twoway (rarea ub lb versions, color(gs10%20)  sort lcolor(gs10) lpattern(dash so
 
 
  
-graph export output/figures/competence.pdf, replace 
+graph export "output/figures/competence.pdf", replace 

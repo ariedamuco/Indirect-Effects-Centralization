@@ -1,7 +1,3 @@
-*ssc install moremata, replace
-*set scheme burd
-*ssc install did_multiplegt
-*ssc install reghdfe
 
 set scheme plotplain
 
@@ -50,4 +46,4 @@ reshape long coeff_did ub lb se_did, i(id) j(u)
 twoway (rcap ub lb versions,  sort lcolor(gs10) lpattern(dash solid)) ||  (scatter coeff_did versions, sort mcolor(sea) mstyle(oh)),  xscale(range(0.8(1)4))  yscale(range(0.2(0.1)-1.5))  xlabel(0 " "  1 "Baseline" 3 "Heterogenous DiD" 4 " ",  angle(45)) xlabel( 3.1 "Controls", add nogrid noticks)  ylabel(0.2 "0.2" 0 "0"  -0.2 "-0.2" -0.4 "-0.4"  -0.6 "-0.6" -0.8 "-0.8" -1 "-1.0" -1.2 "-1.2" -1.4 "-1.4",  angle(45)) xtitle(" ") legend (off)
 
  
-graph export output/figures/comparison-coefficient-estimates.pdf, replace 
+graph export "output/figures/comparison-coefficient-estimates.pdf", replace 

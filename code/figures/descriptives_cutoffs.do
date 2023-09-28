@@ -50,18 +50,18 @@ egen distinct_id = total(tag_id), by(round_start)
 preserve
 collapse (max) distinct_id, by(round_start)
 twoway (dot distinct_id round_start), xline(0) ytitle("Number of PBs") xtitle(" ", size(small)) 
-gr save output/figures/pbs_start.gph, replace
+gr save "output/figures/pbs_start.gph", replace
 restore
 
 preserve
 collapse (count) distinct_id, by(round_start)
 drop if round_start==.
 twoway (dot distinct_id round_start), xline(0) ytitle("Number of observations") xtitle(" ", size(small)) 
-gr save output/figures/obs_start.gph, replace
+gr save "output/figures/obs_start.gph", replace
 restore
 
 gr combine output/figures/pbs_start.gph output/figures/obs_start.gph, ycommon 
-gr export output/figures/descriptives_start.pdf, replace
+gr export "output/figures/descriptives_start.pdf", replace
 
 * distinguishing by everconsip2
 drop tag_id distinct_id
@@ -71,14 +71,14 @@ egen distinct_id = total(tag_id) if everconsip2==0, by(round_start)
 preserve
 collapse (mean) distinct_id, by(round_start everconsip2)
 twoway (dot distinct_id round_start if everconsip2==0), xline(0) ytitle("Number of PBs") xtitle(" ", size(small)) 
-gr save output/figures/pbs_startNeverconsip.gph, replace
+gr save "output/figures/pbs_startNeverconsip.gph", replace
 restore
 
 preserve
 collapse (count) distinct_id, by(round_start everconsip2)
 drop if round_start==.
 twoway (dot distinct_id round_start if everconsip2==0), xline(0) ytitle("Number of observations") xtitle(" ", size(small)) 
-gr save output/figures/obs_startNeverconsip.gph, replace
+gr save "output/figures/obs_startNeverconsip.gph", replace
 restore
 
 gr combine output/figures/pbs_startNeverconsip.gph output/figures/obs_startNeverconsip.gph, ycommon 
@@ -91,18 +91,18 @@ egen distinct_id = total(tag_id) if everconsip2==1, by(round_start)
 preserve
 collapse (mean) distinct_id, by(round_start everconsip2)
 twoway (dot distinct_id round_start if everconsip2==1), xline(0) ytitle("Number of PBs") xtitle(" ", size(small)) 
-gr save output/figures/pbs_startEverconsip.gph, replace
+gr save "output/figures/pbs_startEverconsip.gph", replace
 restore
 
 preserve
 collapse (count) distinct_id, by(round_start everconsip2)
 drop if round_start==.
 twoway (dot distinct_id round_start if everconsip2==1), xline(0) ytitle("Number of observations") xtitle(" ", size(small)) 
-gr save output/figures/obs_startEverconsip.gph, replace
+gr save "output/figures/obs_startEverconsip.gph", replace
 restore
 
 gr combine output/figures/pbs_startEverconsip.gph output/figures/obs_startEverconsip.gph, ycommon 
-gr export output/figures/descriptives_startEverconsip.pdf, replace
+gr export "output/figures/descriptives_startEverconsip.pdf", replace
 drop tag_id distinct_id
 
 * End of a deal 
@@ -121,18 +121,18 @@ egen distinct_id = total(tag_id), by(round_end)
 preserve
 collapse (mean) distinct_id, by(round_end)
 twoway (dot distinct_id round_end), xline(0) ytitle("Number of PBs") xtitle(" ") 
-gr save output/figures/pbs_end.gph, replace
+gr save "output/figures/pbs_end.gph", replace
 restore
 
 preserve
 collapse (count) distinct_id, by(round_end)
 drop if round_end==.
 twoway (dot distinct_id round_end), xline(0) ytitle("Number of observations") xtitle(" ") 
-gr save output/figures/obs_end.gph, replace
+gr save "output/figures/obs_end.gph", replace
 restore
 
 gr combine output/figures/pbs_end.gph output/figures/obs_end.gph, ycommon
-gr export output/figures/descriptives_end.pdf, replace
+gr export "output/figures/descriptives_end.pdf", replace
 
 * distinguishing by everconsip2
 drop tag_id distinct_id
@@ -142,18 +142,18 @@ egen distinct_id = total(tag_id) if everconsip2==0, by(round_end)
 preserve
 collapse (mean) distinct_id, by(round_end everconsip2)
 twoway (dot distinct_id round_end if everconsip2==0), xline(0) ytitle("Number of PBs") xtitle(" ") 
-gr save output/figures/pbs_endNeverconsip.gph, replace
+gr save "output/figures/pbs_endNeverconsip.gph", replace
 restore
 
 preserve
 collapse (count) distinct_id, by(round_end everconsip2)
 drop if round_end==.
 twoway (dot distinct_id round_end if everconsip2==0), xline(0) ytitle("Number of observations") xtitle(" ") 
-gr save output/figures/obs_endNeverconsip.gph, replace
+gr save "output/figures/obs_endNeverconsip.gph", replace
 restore
 
 gr combine output/figures/pbs_endNeverconsip.gph output/figures/obs_endNeverconsip.gph, ycommon
-gr export output/figures/descriptives_endNeverconsip.pdf, replace
+gr export "output/figures/descriptives_endNeverconsip.pdf", replace
 
 drop tag_id distinct_id
 egen tag_id = tag(id round_end) if everconsip2==1
@@ -162,15 +162,15 @@ egen distinct_id = total(tag_id) if everconsip2==1, by(round_end)
 preserve
 collapse (mean) distinct_id, by(round_end everconsip2)
 twoway (dot distinct_id round_end if everconsip2==1), xline(0) ytitle("Number of PBs") xtitle(" ") 
-gr save output/figures/pbs_endEverconsip.gph, replace
+gr save "output/figures/pbs_endEverconsip.gph", replace
 restore
 
 preserve
 collapse (count) distinct_id, by(round_end everconsip2)
 drop if round_end==.
 twoway (dot distinct_id round_end if everconsip2==1), xline(0) ytitle("Number of observations") xtitle(" ") 
-gr save output/figures/obs_endEverconsip.gph, replace
+gr save "output/figures/obs_endEverconsip.gph", replace
 restore
 
-gr combine output/figures/pbs_endEverconsip.gph output/figures/obs_endEverconsip.gph, ycommon
-gr export output/figures/descriptives_endEverconsip.pdf, replace
+gr combine "output/figures/pbs_endEverconsip.gph" "output/figures/obs_endEverconsip.gph", ycommon
+gr export "output/figures/descriptives_endEverconsip.pdf", replace

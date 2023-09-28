@@ -37,4 +37,4 @@ gen versions = _n
 
 twoway (rcap ub lb versions,  sort lcolor(gs10) lpattern(dash solid)) ||  (scatter coeff_did versions, sort mcolor(sea) mstyle(oh)),  xscale(range(0.8(1)3))  yscale(range(0.2(0.1)-0.6))  xlabel(1 "Baseline" 2 "Consip Experience"  3 "Consip Experience",  angle(45)) xlabel( 2.1 "Mandatory Regime"  3.1 "Optional Regime", add nogrid noticks)  ylabel(0.2 "0.2" 0 "0"  -0.2 "-0.2" -0.4 "-0.4"  -0.6 "-0.6",  angle(45)) xtitle(" ") legend (off)
 
-graph export output/figures/coefficients-previous-purchase.pdf, replace 
+graph export "output/figures/coefficients-previous-purchase.pdf", replace 

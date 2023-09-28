@@ -31,7 +31,7 @@ local sample_reg `if consip==0'
 include "code/intermediate/leads-lags.do"
 
 twoway `plots'
-graph export output/figures/es_entry_all.pdf, replace
+graph export "output/figures/es_entry_all.pdf", replace
 
 restore
 
@@ -54,7 +54,7 @@ local normalize_lead = 0
 
 include "code/intermediate/leads-lags.do"
 twoway `plots_end_deal'
-graph export output/figures/es_end_first.pdf, replace
+graph export "output/figures/es_end_first.pdf", replace
 restore	
 
 	
@@ -88,5 +88,5 @@ local normalize_lead = 0
 local sample_reg "if complex==1"
 include "code/intermediate/leads-lags.do"
 twoway `plots'
-graph export output/figures/es_entry_complex.pdf, replace
+graph export "output/figures/es_entry_complex.pdf", replace
 restore
