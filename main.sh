@@ -1,6 +1,4 @@
 #! /bin/bash
-python -m venv indirect_effects
-. indirect_effects/bin/activate
 #Please run first intermediate files, then tables and finally figures. While the order below is not strictly necessary, some figures are generated from table outputs
 
 #Intermediate files

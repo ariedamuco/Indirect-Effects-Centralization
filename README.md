@@ -17,12 +17,14 @@ The repository contains the following structure:
 
 ```
 ├── LICENSE.txt # License file
+├── ado # Ado files for replication
 ├── code # Main code directory
+│   ├── install-packages.do #install necessary Stata packages in the local folder
 │   ├── figures # Code for figures
 │   ├── intermediate # Intermediate processing scripts
 │   └── tables # Scripts for generating tables
 ├── data # Main data directory
-├── main.txt # Main text file
+├── main.sh # Main text file
 └── output # Output directory (two subdirectories included, namely /figures and /tables)
 ```
 
@@ -80,8 +82,7 @@ The provided code reproduces:
 - Programs in `code/intermediate` will prepare the data and files needed to run the tables and figures above
 - Programs in `code/tables` will generate all tables included the paper and appendix
 - Programs `code/figures` will generate all figures included the paper and appendix
-- The code in `main.txt` will run them all and delete log files generated. If you want to store the log files delete the last line included in the file
-
+- The code in `main.sh` will run all necessary files for this replication package
 
 ```
 Stata commands needed to run the files:
