@@ -29,11 +29,11 @@ The repository contains the following structure:
 Data files needed to generate all the replication is included in the data folder 
 
 
-| Data file | Source | Notes    |Provided |
+| Data file | Source | Provided |
 |-----------|--------|----------|---------|
-| `consip_data_AER.dta` | BPV | Confidential | No |
-| `consip.dta.dta` | Own/Derived | Confidential | No |
-| `previous_consip.dta` | Own/Derived | Confidential | No  |
+| `consip_data_AER.dta` | BPV |  Yes |
+| `consip.dta.dta` | Own/Derived | Yes |
+| `previous_consip.dta` | Own/Derived | Yes |
 
 
 ### The main.txt contains the file order and commands to run from the command line.
