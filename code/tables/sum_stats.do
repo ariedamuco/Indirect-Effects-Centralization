@@ -69,7 +69,6 @@ replace N_joutact = N_joutact/N_jit
 order good N_jit N_i post_consip N_jout activeD N_joutact mu_p cv_jt
 
 
-
 estpost tabstat N_jit N_i mu_p cv_jt post_consip N_jout activeD N_joutact , by(good) 
 esttab using  "output/tables/Table1_panelB.tex", noobs nomtitle ///
 cells("N_jit N_i mu_p(fmt(2)) cv_jt(fmt(2)) post_consip(fmt(2)) N_jout(fmt(2)) activeD(fmt(2)) N_joutact(fmt(2)) ") ///

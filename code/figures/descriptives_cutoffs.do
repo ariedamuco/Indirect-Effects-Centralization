@@ -1,7 +1,5 @@
 
 clear
-cap log close
-set more off
 set scheme burd5
 
 

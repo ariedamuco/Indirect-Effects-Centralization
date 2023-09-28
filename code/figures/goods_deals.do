@@ -1,4 +1,4 @@
-*set scheme plotplain
+set scheme plotplain
 use "data/consip.dta", clear
 keep if consip==0
 

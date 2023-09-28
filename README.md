@@ -33,8 +33,7 @@ Data files needed to generate all the replication is included in the data folder
 |-----------|--------|----------|---------|
 | `consip_data_AER.dta` | BPV | Confidential | No |
 | `consip.dta.dta` | Own/Derived | Confidential | No |
-| `previous_consip.dta` | Own/Derived | Confidential | serves as input for Table 4, Table D1 and Figure 4  |
-| `consip_brands.dta.dta` | Own/Derived | Confidential | serves as input for Table 5|
+| `previous_consip.dta` | Own/Derived | Confidential | No  |
 
 
 ### The main.txt contains the file order and commands to run from the command line.
