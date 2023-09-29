@@ -38,7 +38,46 @@ Data files needed to generate all the replication is included in the data folder
 | `previous_consip.dta` | Own/Derived | Yes |
 
 
-### The main.txt contains the file order and commands to run from the command line.
+# Computational requirements
+
+### Software requirements
+
+- Stata (code was last run with version 16)
+  - `estout` (as of  26apr2022)
+  - `reghdfe` (as of 08aug2023)
+   - `pdslasso` (as of 04sept2018)
+   - `outreg` (as of 18sep2015)
+   - `outtable`  (as of 03aug2014)
+  - `listtab`  (as of 04 November 2012)
+   - `ftools`  (as of 08aug2023)
+
+and  `did_multiplegt`, `lassopack`,  `egenmore` ,  `moremata`,  `blindschemes`, `scheme-burd`.
+
+ 
+  - the program "`install-packages.do`" combines setup as in https://gist.github.com/larsvilhuber/8ead0ba85119e4085e71ab3062760190
+  and configuration as in 
+  https://gist.github.com/larsvilhuber/c3dddbcf73e7534a22e3583b3422d7c5
+  will install all dependencies locally, and should be run once.
+
+- Python 3.10.9
+
+#### Summary
+
+- The code is relatively fast to run and you should be able to run everything within one hour. 
+
+- Figures are saved in .pdf in
+line with the AEA, guidelines, however, the colors might change if the code is run from bash rather than Stata terminal
+
+- Table 4, and the resulting Figure 4 and Table D1 (robustness to Table 4) depend on setting the seed and the code may
+provide different results depending on the operating system. This issue raises because we are dealing with multiple transactions on the same date for the same identifier, Stata selects randomly which dates go first every time the code is run.
+Hence, we set a seed and use a uniformly distributed variable to break the ties (on which date gets ordered first).
+
+
+#### Details
+
+The code was last run on a **8-core Chip Apple M1 with MacOS version 12.5**. 
+
+### The main.sh contains the file order and commands to run from the command line.
 
 The provided code reproduces:
 - All numbers provided in text in the paper
@@ -61,11 +100,11 @@ The provided code reproduces:
 | Table E2         | appendix-het-pb-class.do     |
 | Table E3          | appendix-het-quantity.do    |
 | Table E4         | fe-quartiles.do        |
-| Table F1         | appendix-event_studies.do     |
+| Table F1         | appendix-event-study.do     |
 | Table F2         | did-complex-simple.do    |
 |-------------------|--------------------------|
 | Figure 1           | goods_deals.do   |
-| Figure 2           | event_studies.do|
+| Figure 2           | event_study.do|
 | Figure 3        | competence.do|
 | Figure 4        | previous-consip-coefficient-estimates.do        |
 |-------------------|--------------------------|
@@ -74,10 +113,10 @@ The provided code reproduces:
 | Figures D1       | robustness-drop-one.do|
 | Figure D2       |cofficient-estimates-DH.do       |
 | Figure F1       | appendix-event-study.do        |
+| Figure F2       | appendix-event-study-end-deal.do        |
 |-------------------|--------------------------|
 
 # Description of programs/code
-
 
 - Programs in `code/intermediate` will prepare the data and files needed to run the tables and figures above
 - Programs in `code/tables` will generate all tables included the paper and appendix
@@ -85,22 +124,6 @@ The provided code reproduces:
 - The code in `main.sh` will run all necessary files for this replication package
 
 ```
-Stata commands needed to run the files:
-
-reghdfe version 5.7.3 13nov2019  
-esttab  version 2.0.9  06feb2016  Ben Jann 
-estout  version 3.21  19aug2016  Ben Jann 
-version 2.3.5  05feb2016  Ben Jann 
-frmttable version 1.31  12jul2015 by John Luke Gallup 
-pdslasso package 1.1 15jan2019 
-
-
-Also make sure to install the following: 
-
-ssc install moremata  # Prerequisite to implement De Chaisemartin and d’Haultfoeuille (2020) 
-ssc install did_multiplegt  # Implements De Chaisemartin and d’Haultfoeuille (2020) 
-ssc install blindschemes #For plots 
-set scheme burd #For plots 
 
 References
 

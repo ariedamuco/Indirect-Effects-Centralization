@@ -39,5 +39,5 @@ merge 1:m good date_m using `purchases'
 format date_m %tm
 
 twoway  (rbar deal_start1 deal_end1 good , horizontal barwidth(.45) color(gs13)) (rbar deal_start2 deal_end2 good , horizontal barwidth(.45) color(gs13)) (rbar deal_start3 deal_end3 good , horizontal barwidth(.45) color(gs13))(scatter good date_m if _m==3 & date<deal_start1, mcolor(plr1) mlwidth(tiny) msize(tiny) mstyle(diamond)) (scatter good date_m if _m==3 & date>=deal_start1 & [activeD==0|activeD==1], mcolor(plb1) mstyle(diamond) mlwidth(tiny) msize(tiny)), xline(528 540) yla(1/13, valuelabel tlength(0) ang(h) labsize(small)) xlabel(468 "January 1999" 480 "January 2000" 492 "January 2001"  504 "January 2002" 516 "January 2002" 528 "January 2003" 540 "January 2004" 552 "January 2005", labsize(small)   angle(45)) ytitle("") xtitle("") plotr(m(large)) graphregion(fcolor(white)) legend(position(6) size(small) order( 4 "Pre-Consip purchases" 5 "Post-Consip purchases" 1 "Consip deals") cols(1))
-graph export "output/figures/goods_deals.pdf", replace 
+graph export "output/figures/goods_deals.png ", replace 
 
