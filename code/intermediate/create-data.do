@@ -164,7 +164,6 @@ encode  brand_s, gen(brand)
 replace brand=0 if brand==.
 
 /* NOTE: ALL VARIABLES NAMED C`I'_CHAR REFER TO CHARACTERISTICS OF GOOD I THAT ARE SIGNIFICANT DETERMINANTS OF PRICES */
-/* Nota: le uniche variabili di controllo relative ai beni 7 e 9 (che fanno parte del nostro campione d'analisi) hanno la denominazione gho */
 
 /* replace missing characteristics with mode/mean by good */
 rename char2_firehazard_classification char2_firehazard_class
