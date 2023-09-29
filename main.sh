@@ -34,7 +34,7 @@ python code/tables/clean-tables.py #clean tables about previous Consip experienc
 
 #Figures
 stata-mp -e code/figures/goods_deals.do #Figure 1
-#stata-mp -e code/figures/event_studies.do #Figure 2
+stata-mp -e code/figures/event_study.do #Figure 2
 stata-mp -e code/figures/competence.do #Figure 3
 stata-mp -e code/figures/previous-consip-coefficient-estimates.do #Figure 4
 

@@ -68,10 +68,7 @@ and  `did_multiplegt`, `lassopack`,  `egenmore` ,  `moremata`,  `blindschemes`, 
 - Figures are saved in .pdf in
 line with the AEA, guidelines, however, the colors might change if the code is run from bash rather than Stata terminal
 
-- Table 4, and the resulting Figure 4 and Table D1 (robustness to Table 4) depend on setting the seed and the code may
-provide different results depending on the operating system. This issue raises because we are dealing with multiple transactions on the same date for the same identifier, Stata selects randomly which dates go first every time the code is run.
-Hence, we set a seed and use a uniformly distributed variable to break the ties (on which date gets ordered first).
-
+- Table 4, Figure 4, and Table D1 (which provides robustness for Table 4) depend on the setting of the seed, and the code may yield different results depending on the operating system. This issue arises because we are dealing with multiple transactions on the same date for the same identifier. Since Stata selects randomly which dates go first every time the code is run, we set a seed and use a uniformly distributed variable to break the ties regarding which date gets ordered first.
 
 #### Details
 
