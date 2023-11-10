@@ -1,5 +1,4 @@
-# Replication Package for: Indirect Savings from Public Procurement
-Centralization
+# Replication Package for: Indirect Savings from Public Procurement Centralization
 
 The data and code in this repository reproduce tables and figures for Indirect Savings from Public Procurement
 Centralization by Clarissa Lotti, Arieda Muço, Giancarlo Spagnolo, and Tommaso Valletti.
