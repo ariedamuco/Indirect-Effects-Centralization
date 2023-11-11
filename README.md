@@ -127,6 +127,7 @@ Bandiera, Oriana, Andrea Prat, and Tommaso Valletti. “Active and Passive Waste
 
 Bandiera, Oriana, Prat, Andrea, and Valletti, Tommaso. Replication data for: Active and Passive Waste in Government Spending: Evidence from a Policy Experiment. Nashville, TN: American Economic Association [publisher], 2009b. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2019-10-12. https://doi.org/10.3886/E113315V1
 
-## Citation
+```
+#### Citation
 
 If you use the data or code from this repository in your research, please cite it as follows, or use the citation metadata provided in the [CITATION.CFF](./CITATION.CFF) file.
