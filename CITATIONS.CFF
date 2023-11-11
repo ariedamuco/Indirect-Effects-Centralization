@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this data or code in your work, please cite it using the following metadata"
+title: "Data and Code for Indirect Savings from Public Procurement Centralization"
+doi: "10.5281/zenodo.10114444"
+date-released: 2023-11-11  # Update with the actual release date
+
+authors:
+  - family-names: "Lotti"
+    given-names: "Clarissa"
+    affiliation: "LEAR"
+  - family-names: "Muço"
+    given-names: "Arieda"
+    orcid: "0000-0001-9714-8498"
+    affiliation: "Central European University"
+  - family-names: "Spagnolo"
+    given-names: "Giancarlo"
+    orcid: "0000-0003-4117-6283"
+    affiliation: "Stockholm University"
+  - family-names: "Valletti"
+    given-names: "Tommaso"
+    orcid: "0000-0001-9728-5513"
+    affiliation: "Imperial College London"
+
+repository-code: "https://github.com/ariedamuco/Indirect-Effects-Centralization"
+

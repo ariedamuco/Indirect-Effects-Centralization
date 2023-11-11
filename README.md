@@ -126,3 +126,7 @@ References
 Bandiera, Oriana, Andrea Prat, and Tommaso Valletti. “Active and Passive Waste in Government Spending: Evidence from a Policy Experiment.” American Economic Review 99, no. 4 (2009a): 1278–1308. https://doi.org/10.1257/aer.99.4.1278.
 
 Bandiera, Oriana, Prat, Andrea, and Valletti, Tommaso. Replication data for: Active and Passive Waste in Government Spending: Evidence from a Policy Experiment. Nashville, TN: American Economic Association [publisher], 2009b. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2019-10-12. https://doi.org/10.3886/E113315V1
+
+## Citation
+
+If you use the data or code from this repository in your research, please cite it as follows, or use the citation metadata provided in the [CITATION.CFF](./CITATION.CFF) file.
