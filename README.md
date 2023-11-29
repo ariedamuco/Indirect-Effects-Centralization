@@ -100,9 +100,9 @@ The provided code reproduces:
 | Table F2         | did-complex-simple.do    |
 |-------------------|--------------------------|
 | Figure 1           | goods_deals.do   |
-| Figure 2           | event_study.do|
-| Figure 3        | competence.do|
-| Figure 4        | previous-consip-coefficient-estimates.do        |
+| Figure 2  and 3         | event_study.do|
+| Figure 4        | competence.do|
+| Figure 5       | previous-consip-coefficient-estimates.do        |
 |-------------------|--------------------------|
 | Figure A1          | appendix_figure_residualized_prices.do   |
 | Figures B1 & B2          | descriptives_cutoffs.do|
