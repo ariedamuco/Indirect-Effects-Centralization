@@ -1,5 +1,5 @@
 
-
+do "code/config-file.do"
 use "data/consip.dta", clear
 include "code/intermediate/good-char.do"
 

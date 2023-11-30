@@ -1,3 +1,5 @@
+do "code/config-file.do"
+
 import delimited "code/intermediate/mapping-brands.txt", delimiter("|") clear varnames(1)
 rename old brand_s // Ensure the 'old' variable is named 'brand_s' for the merge
 tempfile mapping_brands

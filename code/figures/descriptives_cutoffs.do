@@ -1,3 +1,4 @@
+do "code/config-file.do"
 
 clear
 set scheme burd5

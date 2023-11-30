@@ -1,5 +1,6 @@
-
 clear all
+do "code/config-file.do"
+
 use  "data/previous_consip.dta", clear
 include "code/intermediate/good-char.do"
 

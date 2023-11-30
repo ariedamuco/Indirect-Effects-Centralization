@@ -1,3 +1,4 @@
+do "code/config-file.do"
 
 do code/tables/previous-consip-experience.do
 local version1 " if consip==0                           , absorb(id goodid month_year)  cluster(id)"

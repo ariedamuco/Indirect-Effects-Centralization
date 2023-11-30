@@ -1,3 +1,4 @@
+do "code/config-file.do"
 set scheme plotplain
 use "data/consip.dta", clear
 keep if consip==0

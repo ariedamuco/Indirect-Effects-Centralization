@@ -1,8 +1,7 @@
+do "code/config-file.do"
+
 use "data/consip.dta", clear
 include "code/intermediate/good-char.do"
-
-**gen complex =(inlist(goodid, 3, 8, 17,19, 20, 21))
-
 gen complex =(inlist(goodid, 3, 8, 17, 21))
 
 label var complex "Complex Good"

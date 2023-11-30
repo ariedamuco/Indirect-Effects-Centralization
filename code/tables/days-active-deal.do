@@ -1,3 +1,5 @@
+do "code/config-file.do"
+
 use "data/consip.dta", clear
 drop if consip==1 
 

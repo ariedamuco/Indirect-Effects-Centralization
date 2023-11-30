@@ -1,3 +1,4 @@
+do "code/config-file.do"
 
 use "data/consip.dta", clear
 

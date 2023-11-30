@@ -1,5 +1,5 @@
 use "data/consip.dta", clear
-set seed 12345
+set sortseed 123
 
 * Generate a random number for each observation
 gen random_number = runiform()

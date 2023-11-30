@@ -1,3 +1,4 @@
+do "code/config-file.do"
 set scheme plotplain
 use  "data/previous_consip.dta", clear
 

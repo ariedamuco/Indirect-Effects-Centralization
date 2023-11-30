@@ -1,6 +1,9 @@
-set scheme plotplain
 
 clear all
+do "code/config-file.do"
+set scheme plotplain
+
+
 use "data/consip.dta", clear
 include "code/intermediate/good-char.do"
 
