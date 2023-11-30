@@ -4,7 +4,7 @@
 #Intermediate files
 
 #stata-mp -e code/install-packages.do
-#stata-mp -e code/config-file.do
+#stata-mp -e code/config-file.do 
 
 stata-mp -e code/intermediate/create-data.do #creates main data for analysis
 stata-mp -e code/intermediate/good-char.do #stores locals for regressions
@@ -35,9 +35,9 @@ python code/tables/clean-tables.py #clean tables about previous Consip experienc
 
 #Figures
 stata-mp -e code/figures/goods_deals.do #Figure 1
-stata-mp -e code/figures/event_study.do #Figure 2
-stata-mp -e code/figures/competence.do #Figure 3
-stata-mp -e code/figures/previous-consip-coefficient-estimates.do #Figure 4
+stata-mp -e code/figures/event_study.do #Figure 2 and Figure 3
+stata-mp -e code/figures/competence.do #Figure 4
+stata-mp -e code/figures/previous-consip-coefficient-estimates.do #Figure 5
 
 ##Figures Appendix
 stata-mp -e code/figures/appendix_figure_residualized_prices.do #Figure A1
