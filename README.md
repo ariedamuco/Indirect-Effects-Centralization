@@ -19,6 +19,7 @@ The repository contains the following structure:
 ├── ado # Ado files for replication
 ├── code # Main code directory
 │   ├── install-packages.do #install necessary Stata packages in the local folder
+│   ├── config-file.do #install packages or refer to the local ado
 │   ├── figures # Code for figures
 │   ├── intermediate # Intermediate processing scripts
 │   └── tables # Scripts for generating tables
