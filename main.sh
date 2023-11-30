@@ -4,6 +4,7 @@
 #Intermediate files
 
 #stata-mp -e code/install-packages.do
+#stata-mp -e code/config-file.do
 
 stata-mp -e code/intermediate/create-data.do #creates main data for analysis
 stata-mp -e code/intermediate/good-char.do #stores locals for regressions
