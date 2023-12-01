@@ -1,0 +1,14 @@
+
+This data and code replication package is designed to facilitate the replication and further study of the findings presented in the paper titled "Active and Passive Waste in Government Spending: Evidence from a Policy Experiment" by Oriana Bandiera, Andrea Prat, and Tommaso Valletti, originally published in the American Economic Review (2009).
+
+Original Data Source:
+The original dataset used in this study was provided by Bandiera, Oriana, Andrea Prat, and Tommaso Valletti. It can be accessed through the following DOI link: https://doi.org/10.1257/aer.99.4.1278.
+
+Replication Data Reference:
+Bandiera, Oriana, Prat, Andrea, and Valletti, Tommaso. "Replication data for: Active and Passive Waste in Government Spending: Evidence from a Policy Experiment." Nashville, TN: American Economic Association [publisher], 2009b. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2019-10-12. https://doi.org/10.3886/E113315V1
+
+Usage Terms:
+The data included in this package is publicly available and can be freely accessed through the provided links. Users of this package should adhere to any usage terms or conditions set forth by the original data providers.
+
+Contact Information:
+Contact MucoA@ceu.edu for further inquiries
